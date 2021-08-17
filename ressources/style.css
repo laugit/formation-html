@@ -1000,6 +1000,16 @@ ul.slick-dots li button {
   color: white;
 }
 
+.btn--green {
+  background: #368136;
+}
+
+.btn--half {
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+
 .btn--full {
   display: block;
   width: 100%;
@@ -1120,6 +1130,12 @@ textarea {
   margin-top: 2em;
 }
 
+.submit__container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
 .form__label {
   display: block;
   color: black;
@@ -1148,6 +1164,10 @@ textarea {
 
 .card--form {
   padding: 2.6666666667em 5% 4em;
+}
+
+.card--topspaced {
+  padding-top: 5%;
 }
 
 .modal__content {

@@ -15,6 +15,6 @@
   padding:make_em(40,15) 5%  make_em(60,15);
 }
 
-.card--topspaced{
-  padding-top: 5%;
+.card__text--spaced{
+  padding-top: make_em(25,15);
 }

@@ -1002,12 +1002,12 @@ ul.slick-dots li button {
 
 .btn--green {
   background: #368136;
+  color: white;
 }
 
 .btn--half {
   width: 50%;
   text-align: center;
-  color: white;
 }
 
 .btn--full {
@@ -1166,8 +1166,8 @@ textarea {
   padding: 2.6666666667em 5% 4em;
 }
 
-.card--topspaced {
-  padding-top: 5%;
+.card__text--spaced {
+  padding-top: 1.6666666667em;
 }
 
 .modal__content {

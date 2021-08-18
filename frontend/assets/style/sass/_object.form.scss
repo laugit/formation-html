@@ -1,138 +1,133 @@
 //** Style des éléments des formulaires **//
 
-span.select2-container--default .select2-selection--single{
-  border:1px solid darken($color-grey-border,5%) !important;
-  border-radius: 0px !important;
+span.select2-container--default .select2-selection--single {
+	border: 1px solid darken($color-grey-border, 5%) !important;
+	border-radius: 0px !important;
 }
 
-textarea{
-  min-height: 100px;
+textarea {
+	min-height: 100px;
 }
 
-
-.form__part{
-  input, textarea{
-    width: 100%;
-  }
+.form__part {
+	input,
+	textarea {
+		width: 100%;
+	}
 }
-.form__part--half{
-  width: 47.5%;
+.form__part--half {
+	width: 47.5%;
 }
-.form__part--full{
-  width: 100%;
-}
-
-.form__line{
-  &+&{
-    margin-top: make_em(15,15);
-  }
+.form__part--full {
+	width: 100%;
 }
 
-
-.form__submit{
-  margin-top: make_em(30,15);
+.form__line {
+	& + & {
+		margin-top: make_em(15, 15);
+	}
 }
 
-.form__error{
-  border:1px solid red;
-  color: red;
-  background: rgba(red,0.2);
+.form__submit {
+	margin-top: make_em(30, 15);
 }
 
-.form__success{
-  border:1px solid green;
-  color: green;
-  background: rgba(green,0.2);
+.form__error {
+	border: 1px solid red;
+	color: red;
+	background: rgba(red, 0.2);
 }
 
-select{
-  position: relative;
-  background: url("../../../../img/arrow--down.svg") no-repeat 97.5% center rgba(255, 255, 255, 0.1)
+.form__success {
+	border: 1px solid green;
+	color: green;
+	background: rgba(green, 0.2);
 }
 
-textarea{
-  min-height: 200px;
+select {
+	position: relative;
+	background: url("../../../../img/arrow--down.svg") no-repeat 97.5% center
+		rgba(255, 255, 255, 0.1);
 }
 
-.input--classic{
-  border:1px solid $color-grey-border;
-  border-radius: 9px;
-  padding: make_em(10,15) make_em(15,15);
+textarea {
+	min-height: 200px;
 }
 
-.search__input{
-  font-size: make_em(14,15);
-  padding:make_em(10,14) make_em(20,14);
+.input--classic {
+	border: 1px solid $color-grey-border;
+	border-radius: 9px;
+	padding: make_em(10, 15) make_em(15, 15);
 }
 
-.answer__form{
-  margin-top: make_em(20,15);
+.search__input {
+	font-size: make_em(14, 15);
+	padding: make_em(10, 14) make_em(20, 14);
 }
 
-.form__submit{
-  margin-top: make_em(30,15);
-}
-.form__container{
-  margin-top: make_em(30,15);
-
-  .form__submit{
-    margin-top: make_em(30,15);
-  }
+.answer__form {
+	margin-top: make_em(20, 15);
 }
 
-.submit__container{
-  display:flex;
-  width:100%;
-  justify-content: center;
+.form__submit {
+	margin-top: make_em(30, 15);
+}
+.form__container {
+	margin-top: make_em(30, 15);
+
+	.form__submit {
+		margin-top: make_em(30, 15);
+	}
 }
 
-.form__container--maskable{
-  display:flex;
-  width:0;
-  height:0;
-  justify-content: center;
-  transition: all 0.5s;
-  &:hover{
-    height:100px;
-    width: 100%;
-    transition: all 0s;
-  }
+.submit__container {
+	display: flex;
+	width: 100%;
+	justify-content: center;
 }
 
-.form__input--maskable{
-  height: 0;
-  width: 0;
-  visibility:hidden;
-  transition: all 0.5s;
-  &:hover{
-    height:100px;
-    width: 100%;
-    visibility: visible;
-    transition: all 0s;
-  }
+.submit__container--third {
+	display: flex;
+	width: 33%;
+	justify-content: center;
+	justify-self: center;
 }
 
-
-.submit__container--third{
-  display:flex;
-  width:33%;
-  justify-content: center;
-  justify-self: center;
+.form__label {
+	display: block;
+	color: black;
+	font-weight: 700;
+	font-size: make_em(16, 15);
+	margin-bottom: 10px;
 }
 
-.form__label{
-  display: block;
-  color: black;
-  font-weight: 700;
-  font-size: make_em(16,15);
-  margin-bottom: 10px;
+.form__label--upload {
+	position: relative;
+	cursor: pointer;
+	@include transition_css(all, 0.25s, ease, 0s);
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	&:hover {
+		transform: scale(1.05);
+	}
+	input {
+		cursor: pointer;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 4;
+		opacity: 0;
+		top: 0px;
+		left: 0px;
+	}
 }
-@media(max-width:450px){
 
-  .form__part--half{
-    width: 100%;
-    &+&{
-      margin-top: make_em(15,15);
-    }
-  }
+@media (max-width: 450px) {
+	.form__part--half {
+		width: 100%;
+		& + & {
+			margin-top: make_em(15, 15);
+		}
+	}
 }

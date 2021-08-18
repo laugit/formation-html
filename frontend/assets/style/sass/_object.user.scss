@@ -28,14 +28,32 @@
   box-shadow: 0px 2px 10px 10px rgba(1,1,1,0.02);
 }
 
-.picture__container{
+.author__picture--wrapper{
   position: relative;
+  width: 160px;
+  height: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.author__picture--maskbtn{
+  &:hover +  .form__container--maskable, &:hover + .form__container--maskable .form__input--maskable{
+    height: 100px;
+    width: 100%;
+    visibility: visible;
+    transition: height 0s, width 0s, visibility 0s;
+  }
+}
+
+.picture--absolute{
+  position:absolute;
 }
 
 .picture__container--detail{
 
   margin-bottom: make_em(10,15);
 }
+
 .author__rank{
   background: $color-primary;
   color: white;
@@ -62,4 +80,8 @@
   &:hover{
     transform:translateY(-15px);
   }
+}
+
+.author__picture--rounded{
+  border-radius: 50%;
 }

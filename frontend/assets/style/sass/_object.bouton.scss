@@ -29,6 +29,7 @@
 }
 
 .btn--half{
+  display:block;
   width:50%;
   text-align: center;
 }
@@ -38,8 +39,6 @@
   width: 100%;
   text-align: center;
 }
-
-
 
 .topic__create{
   position: fixed;

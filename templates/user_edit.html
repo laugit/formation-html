@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Editer le profil | Django Forum</title>
+        <link rel="stylesheet" type="text/css" href="../ressources/style.css"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Muli:300,700&display=swap" rel="stylesheet">
+
+        <meta name="author" content="Axel Cardinaels"/>
+        <meta name="contact" content="hello@axel-cardinaels.be" />
+        <meta name="copyright" content="Copyright (c) 2021 Django Forum Tous droits réservés." />
+        <link rel="icon" type="image/png" href="../img/favicon/favicon.png" />
+        <meta name="description" content="Django Forum, un tutorial Django"/>
+
+        <meta property="og:title" content="Editer le profil | Django Forum" />
+        <meta property="og:image" content="../img/share-header.jpg" />
+        <meta property="og:description" content="Django Forum, description Sociale" />
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="header__upper column column--spaced column--centered wrapper--main">
+                <a href="index.html" title="Retourner à la page d’accueil" class="header__logo">Django Forum</a>
+                <nav class="header__menu">
+                    <span class="hide">Menu de navigation</span>
+                    <ul class="menu__list column column--centered">
+            
+                    <li>
+                        <a href="topics_list.html" title="Aller à la page des sujets">Sujets</a>
+                    </li>
+            
+                    <li>
+                        <a href="register.html" title="Aller à la page d'inscription">Inscription</a>
+                    </li>
+            
+                    <li>
+                        <a href="login.html" title="Aller à la page de connexion">Connexion</a>
+                    </li>
+            
+                    <li>
+                        <a href="user_details.html" title="Afficher mon profil">
+                        <img src="https://www.bootdey.com/img/Content/avatar/avatar1.png" alt="Photo de Profil de ..." class="menu__profile"/>
+                        </a>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__content wrapper--main">
+                <nav>
+                    <span class="hide">Fil D'ariane</span>
+                    <ul class="breadcrumb__list column column--centered">
+                        <li class="breadcrumb__item">
+                            <a href="index.html" title="Retourner à la page d'accueil">Accueil</a>
+                        </li>
+                        <li class="breadcrumb__item">
+                            <a href="user_details.html" title="Retourner à la page du profil">Afficher mon profil</a>
+                        </li>
+
+                        <li class="breadcrumb__item breadcrumb__item--current">
+                            <span>Editer mon profil</span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <main class="page__content">
+            <section class="section section--centered">
+                <h1 class="title--main">Axel Cardinaels</h1>
+            </section>
+
+            <section class="section wrapper--form wrapper--centered">
+                <div class="card card--form">
+                    <div class="section--centered">
+                        <div class="submit__container">
+                            <div class="submit__container--third section--column section--centered">
+                                <img class="author__picture--rounded author__picture--detail author__picture--maskbtn" src="https://www.bootdey.com/img/Content/avatar/avatar1.png" alt="Photo de Profil de ..."/>
+                                <div class="form__container--maskable">
+                                    <form>
+                                        <div class="form__line">
+                                            <div class="form__part form__part--full form__input--maskable">
+                                                <label for="avatar" class="form__label">Choisissez une photo de profil:</label>
+                                                <input type="file" value="Changer ma photo de profil" id="avatar" name="avatar"/>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__container">
+                        <form>
+
+                            <div class="form__line">
+                                <div class="form__part form__part--full">
+                                    <label class="form__label" for="firstname">Veuillez entrer votre prénom</label>
+                                    <input type="text" required class="input--classic input--text" placeholder="Axel" id="firstname" name="firstname">
+                                </div>
+                            </div>
+
+                            <div class="form__line">
+                                <div class="form__part form__part--full">
+                                    <label class="form__label" for="name">Veuillez entrer votre nom</label>
+                                    <input type="text" required class="input--classic input--text" placeholder="Cardinaels" id="name" name="name">
+                                </div>
+                            </div>
+
+                            <div class="form__line">
+                                <div class="form__part form__part--full">
+                                    <label class="form__label" for="mail">Veuillez entrer votre email</label>
+                                    <input type="email" required class="input--classic input--text" placeholder="Quel est votre email" id="mail" name="mail">
+                                </div>
+                            </div>
+
+                            <div class="form__submit">
+                                <div class="submit__container">
+                                    <input type="submit" class="btn btn--primary btn--full" value="Confirmer l'opération"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="section--centered">
+
+            <h2 class="hide">Pied de page</h2>
+        
+            <p class="footer__disclaimer">© 2021 Copyright
+            <a href="https://github.com/duboisR/django-forum" target="_blank" title="Visiter le profil GitHub de Romain Dubois">duboisR</a> &
+            <a href="https://github.com/AxelCardinaels" target="_blank" title="Visiter le profil GitHub de Axel Cardinaels">AxelCardinaels</a>
+            </p>
+        
+        </footer>
+    </body>
+    <script language="JavaScript" type="text/javascript" src="../ressources/vendors.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../ressources/main_script.js"></script>
+</html>

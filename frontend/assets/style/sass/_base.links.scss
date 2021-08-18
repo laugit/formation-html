@@ -5,7 +5,7 @@ a{
   color:$color-primary;
   @include transition_css(all, 0.25s, ease,0s);
   &:hover{
-    color:darken($color-primary,5%);
+    color:darken($color-primary,15%);
     border-color: darken($color-primary,5%);
   }
 }
@@ -14,4 +14,11 @@ a{
   color: $color-text-light;
   display: inline-block;
   margin-top: 10px;
+}
+
+.link--bold{
+  font-weight: 700;
+  &:hover{
+    text-decoration: underline;
+  }
 }
